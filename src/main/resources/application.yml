@@ -1,0 +1,15 @@
+
+
+spring:
+# 부트에서 properties의 이름을 application-xxx.yml로 하면 
+# xxx라는 이름의 profile이 생성되어 이를 통해 관리가능. 
+# 즉, profile=xxx라는 식으로 호출하면 해당 yml의 설정들을 가져올수 있음. 
+  profiles: 
+    # include:
+    # - oauth
+  jpa: 
+  
+    show-sql: true
+  h2:
+    console:
+      enabled: true
