@@ -22,6 +22,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
   private final JwtTokenProvider jwtTokenProvider;
 
+  // 스프링 부트 시큐리티 설정 클래스에 PasswordEncoder 에 대한 반환값을 생성하는 메서드를 작성하였습니다.
+  // PasswordEncoder를 반환하는 메서드를 구현하지 않으면 스프링 부트에서는 PassEncoder에
+  // 대한 정보를 찾을 수 없다면서 예외를 발생시킵니다.
   // 암호화에 필요한 PasswordEncoder 를 Bean 등록합니다.
   @Bean
   public PasswordEncoder passwordEncoder() {
